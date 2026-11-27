@@ -17,7 +17,11 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "tickets")
 public class Ticket {
@@ -26,7 +30,7 @@ public class Ticket {
 	private Long id;
 
 	@Column(name = "ticket_no", nullable = false, length = 20)
-	private String ticket_no;
+	private String ticketNo;
 
 	// Relationship with User (customer)
     @ManyToOne(fetch = FetchType.LAZY)

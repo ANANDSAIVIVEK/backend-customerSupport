@@ -2,8 +2,6 @@ package com.support.smart_customer_support.entity;
 
 import java.time.LocalDateTime;
 
-import javax.management.relation.Role;
-
 import org.hibernate.annotations.CreationTimestamp;
 
 import jakarta.persistence.Column;
